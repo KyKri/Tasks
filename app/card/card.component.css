@@ -1,12 +1,17 @@
-.card{
+.card {
     border-radius: 0;
 }
 
-.card, .card-footer{
+.card, .card-footer {
     background-color: #FFFFA5;
     border: none;
 }
 
-.card-footer{
+.card-footer {
     text-align: right;
+}
+
+i {
+    color: #CC0000;
+    padding: .5rem;
 }
