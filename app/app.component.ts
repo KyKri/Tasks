@@ -9,8 +9,14 @@ import { Task } from './model/task';
 })
 
 export class AppComponent { 
-    task1: Task = {
-        content: "Learn to code",
-        completed: false
-    }
+    private tasks = [
+        new Task(
+            "Buy a monkey",
+            false
+        ),
+        new Task (
+            "Return the monkey..",
+            false
+        )
+    ]
  }
