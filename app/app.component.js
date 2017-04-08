@@ -16,6 +16,7 @@ var AppComponent = (function () {
             new task_1.Task("Buy a monkey", false),
             new task_1.Task("Return the monkey..", false)
         ];
+        this.currentTask = new task_1.Task(null, false);
     }
     AppComponent = __decorate([
         core_1.Component({
