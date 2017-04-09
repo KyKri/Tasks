@@ -18,6 +18,13 @@ var AppComponent = (function () {
         ];
         this.currentTask = new task_1.Task(null, false);
     }
+    //add a task to the tasks array
+    //using "this" allows us to get the scope of the class rather than just the
+    //addTask method's scope
+    AppComponent.prototype.addTask = function () {
+        var task = new task_1.Task(this.currentTask.content, this.currentTask.completed);
+        this.tasks.push(task);
+    };
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
